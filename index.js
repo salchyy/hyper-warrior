@@ -314,7 +314,7 @@ module.exports = function warrior(mod) {
 						packet_structure.skill.id = skills.aerial_1.id;
 						mod.send('C_START_SKILL', 7, packet_structure);
 						blocked = true;
-						const aerial_delay = (edge == 10) ? 100 : 800;
+						const aerial_delay = (edge == 10) ? 100 : 1100;
 						aerial_timeout = mod.setTimeout(() => { 
 							mod.send('C_START_SKILL', 7, packet_structure); aerial_timeout = null; blocked = false;
 						
@@ -459,10 +459,7 @@ module.exports = function warrior(mod) {
 		setTimeout(function () { send_instance(a); }, 25);
 	}	
 	function set_send_instance(a) {
-		send_instance(a);
-		setTimeout(function () { send_instance(a); }, 25);
-		setTimeout(function () { send_instance(a); }, 50);
-		setTimeout(function () { send_instance(a); }, 75);			
+		send_instance(a);		
 	}
 	function send_instance(a) {
 		mod.send('C_START_INSTANCE_SKILL', 7, {
