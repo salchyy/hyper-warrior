@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "data": {
+        "enabled": true,
+        "fastskills": true,
+        "boss": false,
+        "endurance": false,
+        "root": true,
+        "brooch": true,
+        "infuriate": true,
+        "gamble": true,
+        "frenzy": true,
+        "waltz": true,
+        "traverse": true,
+        "aerial": true,
+        "scythe": true,
+        "draw": true,
+        "rain": true,
+        "rising": true,
+        "reaping": true,
+        "poison": true,
+        "combative": true,
+        "torrent": true,
+        "charging": true,
+        "vortex": true,
+        "permagamble": false,
+        "nocdaerial": false
+    }
+}
